@@ -1,0 +1,30 @@
+{
+  "name": "e2e-saucedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test:cypress": "cypress run --browser chrome --headed --spec \"cypress/e2e\"",
+  "report:merge": "npx mochawesome-merge cypress/reports/*.json --output cypress/reports/merge/report.json",
+  "report:generate": "npx marge cypress/reports/merge/report.json --reportDir cypress/reports/html-report --inline",
+  "report:open": "start cypress/reports/html-report/cypress/reports/merge/report.html",
+  "run:all": "npm run test:cypress && npm run report:merge && npm run report:generate && npm run report:open"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/step_definitions"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "4.3.1"
+  }
+}
