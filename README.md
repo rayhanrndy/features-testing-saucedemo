@@ -1,4 +1,4 @@
-# Features Testing Saucedemo
+# Functional Testing Saucedemo
 
 ![Cypress](https://img.shields.io/badge/Testing-Cypress-brightgreen)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
