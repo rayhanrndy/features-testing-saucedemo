@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-This repository contains an end-to-end automation testing project for the [SauceDemo](https://www.saucedemo.com/) website.  
+This repository contains functional testing project for the [SauceDemo](https://www.saucedemo.com/) website.  
 It is built using **Cypress**, with **BDD Cucumber**, and integrated with **GitHub Actions CI/CD pipeline**.
 
 The tests cover critical user flows on SauceDemo, ensuring core functionalities work as expected.
